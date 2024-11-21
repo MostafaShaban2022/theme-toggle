@@ -8,7 +8,7 @@ void main() {
   runApp(
     ChangeNotifierProvider(
       create: (context) =>
-          UiProvider()..init(), // Call init here to load preferences
+          UiProvider()..init(), 
       child: const MyApp(),
     ),
   );
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final notifier =
-        context.watch<UiProvider>(); // Access the notifier from context
+        context.watch<UiProvider>(); 
     return MaterialApp(
       themeMode: notifier.isDark ? ThemeMode.dark : ThemeMode.light,
       darkTheme: notifier.darktheme,
