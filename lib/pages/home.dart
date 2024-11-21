@@ -8,7 +8,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Update the backgroundColor to follow the current theme
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       resizeToAvoidBottomInset: false,
       body: Padding(
@@ -28,7 +27,6 @@ class Home extends StatelessWidget {
                 const SizedBox(height: 10),
                 Row(
                   children: [
-                    // Wrapping the ListTile with an Expanded widget
                     const Expanded(
                       child: ListTile(
                         leading: Icon(
